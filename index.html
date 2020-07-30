@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Home</title>
+    <Link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+    <!-- navigation bar -->
+    <nav class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="handleClicked()">&#9776;</a>
+        <a href="./index.html" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">Categories
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Thoughts</a>
+                <a href="#">Life</a>
+                <a href="#">Skills</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <div id="home-container">
+
+        <!-- header with website name -->
+        <header class="header hbox">
+            <h1>Hanna</h1>
+            <h4>Record Design and Beauty</h4>
+        </header>
+
+        <!-- blog main content -->
+        <section class="home-content hbox">
+            <!-- content card one -->
+            <div class="content-card ">
+                <a href="./blog-post.html"><img src="images/card-work.jpg"
+                        alt="Article associated picture. Describes people working together"></a>
+                <p class="body-text2">Thoughts / Jun 6, 2020 10:03 a.m. </p>
+
+                <a href="./blog-post.html">
+                    <h3>Exploring Google Calendar Through The Combined View Of Distributed Cognition And Sociomateriality</h3>
+                </a>
+                <p>This paper will examine Google Calendar, a widely used time management and schedule tracking tool, through the lens of a combination of two theories - Distributed Cognition [1] and Sociomateriality [2]. Google Calendar here is considered specifically in the organization context, the role of which is a work calendar in this case...</p>
+                <button class="button outline" onclick="location.href='./blog-post.html'" type="button">read
+                    more</button>
+            </div>
+
+            <!-- content card two -->
+            <div class="content-card ">
+                <a href="./design-system.html"><img src="images/card-work2.jpg"
+                        alt="Article associated picture. Describes three people discussing"></a>
+                <p class="body-text2">Skills / Jun 30, 2020 8:03 a.m. </p>
+
+                <a href="./design-system.html">
+                    <h3>Design System for this website (REAL!!)</h3>
+                </a>
+                <p> Here is a simple design system for this blog website. It is a real post. Please check...</p>
+                <button class="button outline" onclick="location.href='./design-system.html'" type="button">read more</button>
+            </div>
+        </section>
+
+        <!-- feature articles -->
+        <section class="home-feature hbox">
+
+            <div class="section-title">
+                <h4>feature articles</h4>
+            </div>
+
+            <!-- feature-article one -->
+            <div class="feature-article">
+                <p class="number">01</p>
+                <a href="./blog-post.html">
+                    <h4>Exploring Google Calendar Through The Combined View Of Distributed Cognition And Sociomateriality</h4>
+                </a>
+                <p class="body-text2">Thoughts / Jun 6, 2020</p>
+            </div>
+
+            <!-- feature-article two -->
+            <div class="feature-article">
+                <p class="number">02</p>
+                <a href="./design-system.html">
+                    <h4>Design System for this website (REAL!!)</h4>
+                </a>
+                <p class="body-text2">Skills / Jun 30, 2020</p>
+            </div>
+
+            <!-- feature-article three -->
+            <div class="feature-article">
+                <p class="number">03</p>
+                <a href="#">
+                    <h4>how might we better design across differences with vulnerable users</h4>
+                </a>
+                <p class="body-text2">Thoughts / Jun 7, 2020</p>
+            </div>
+
+            <!-- feature-article four -->
+            <div class="feature-article">
+                <p class="number">04</p>
+                <a href="#">
+                    <h4>the city of hydrangea is here in seattle</h4>
+                </a>
+                <p class="body-text2">Life / Jun 3, 2020</p>
+            </div>
+
+            <!-- subscribe form and button -->
+            <div class="home-subscribe">
+
+                <form method="get" id="subscribe">
+                    <input type="text" id="email" name="email" placeholder="Enter your email address"
+                        class="inputbox"><br>
+                </form>
+                <button type="submit" form="subscribe" class="button infill"><i class="far fa-bell"></i>subscribe</button>
+            </div>
+
+        </section>
+
+        <!-- footer -->
+        <footer class="footer hbox">
+            <p class="body-text2">Design and build by Hannah Wu.<br>&#169; Copyright 2020</p>
+        </footer>
+
+    </div>
+
+    <!-- nav-bar js -->
+    <script src="./js/nav-bar.js"></script>
+
+
+</body>
+
+
+
+</html>

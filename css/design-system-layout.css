@@ -1,0 +1,111 @@
+/* design system page layout */
+
+
+/* border for each section only in design system. Different from .hbox in style.css */
+.box {
+    margin    : 4em 0;
+    box-sizing: border-box;
+    border    : 1px dashed #9c9c9c;
+    padding   : 2vw;
+}
+
+/* colors section layout*/
+#color-group {
+    display              : grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap             : 2%;
+    height               : 10vw;
+    justify-content      : start;
+}
+
+#color-group div {
+    height         : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+/* button section layout*/
+#button {
+    width: 40%;
+}
+
+/* form layout */
+#form {
+    width: 40%;
+}
+
+/* card section layout */
+#card {
+    display              : grid;
+    grid-template-rows   : minmax(auto, 1fr);
+    grid-template-columns: 2.2fr 1fr;
+    grid-row-gap         : 15px;
+    grid-column-gap      : 5%;
+    grid-template-areas  :
+        "tl tl"
+        "cc fa"
+        "br br"
+        "dt dt";
+    margin-bottom: 3vw;
+}
+
+#card-section {
+    grid-area: tl;
+}
+
+#content-card-container {
+    grid-area: cc;
+}
+
+#feature-card-container {
+    grid-area: fa;
+}
+
+#author-brief-container {
+    grid-area: br;
+}
+
+#author-detailed-container {
+    grid-area: dt;
+}
+
+#design-system h5 {
+    margin: 0;
+}
+
+@media only screen and (max-width:1200px) {
+
+    #button,
+    #form {
+        width: 100%;
+    }
+
+    #card {
+        grid-template-rows   : minmax(auto, 1fr);
+        grid-template-columns: 1fr;
+        grid-row-gap         : 30px;
+        grid-column-gap      : 0;
+        grid-template-areas  :
+            "tl tl"
+            "cc cc"
+            "fa fa"
+            "br br"
+            "dt dt";
+    }
+
+}
+
+@media only screen and (max-width:760px) {
+    #card {
+        grid-row-gap: 30px;
+    }
+
+    #color-group {
+        font-size: 0.875em;
+    }
+
+    .box {
+        padding: 0;
+    }
+}

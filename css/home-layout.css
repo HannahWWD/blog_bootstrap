@@ -1,0 +1,50 @@
+/* home page layout */
+
+#home-container {
+    display              : grid;
+    grid-template-rows   : 423px 1fr 91px;
+    grid-template-columns: 70% 1fr;
+    grid-template-areas  :
+        "hd hd"
+        "hct hfe"
+        "ft ft"
+    ;
+}
+
+
+
+.home-content {
+    grid-area: hct;
+    padding  : 4vw;
+}
+
+.home-feature {
+    padding  : 4vw 4vw 4vw 2vw;
+    grid-area: hfe;
+}
+
+.home-feature .section-title {
+    width: 100%;
+}
+
+.home-subscribe {
+    margin-top: 50px;
+}
+
+/* layout for pad and mobile */
+@media only screen and (max-width:1200px) {
+    #home-container {
+        grid-template-rows   : 467px 1fr auto 91px;
+        grid-template-columns: 1fr;
+        grid-template-areas  : "hd""hct""hfe""ft";
+    }
+
+    .home-content {
+        padding: 6vw;
+    }
+
+    .home-feature {
+        padding: 0 6vw 10vw 6vw;
+    }
+
+}
