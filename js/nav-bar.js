@@ -2,7 +2,7 @@
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function handleClicked() {
-  var elem = document.getElementById("myTopnav");
+  const elem = document.getElementById("myTopnav");
   /* first click: add reponsive class */
   if (elem.className === "topnav") {
     elem.className += " responsive";
@@ -11,3 +11,19 @@ function handleClicked() {
     elem.className = "topnav";
   }
 }
+
+
+function handleScrolled(){
+  const navbarContainer = document.getElementById("nav-container")
+  const header = document.querySelector("header")
+  const breakPoint = header.offsetHeight - navbarContainer.offsetHeight - 50
+  if (window.pageYOffset >= breakPoint){
+    navbarContainer.classList.add("fixed");
+  }else{
+    navbarContainer.classList.remove("fixed");
+  }
+
+}
+
+
+window.addEventListener('scroll',handleScrolled)

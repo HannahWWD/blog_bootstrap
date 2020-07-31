@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <Link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div id="about-container" class="container">
+        <!-- header with website name -->
+        <header class="header">
+            <div>
+                <h1 class="col-12">Hanna</h1>
+                <h5 class="col-12">Record Life and Beauty</h5>
+                <br>
+            </div>
+
+            <!-- navigation bar -->
+            <nav class="nav-container" id="nav-container">
+                <div class="topnav" id="myTopnav">
+                    <a href="javascript:void(0);" class="icon" onclick="handleClicked()">&#9776;</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="#">Contact</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Categories
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./thoughts.html">Thoughts</a>
+                            <a href="#">Life</a>
+                            <a href="#">Skills</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+
+        <section id="main-about">
+
+            <!-- blog introduction -->
+
+            <div id="thoughts-container" class="thoughts-container">
+                <h2>Popular Thoughts</h2>
+                <!-- breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">Categories</li>
+                      <li class="breadcrumb-item active" aria-current="page">Thoughts</li>
+                    </ol>
+                </nav>
+
+                <!-- card deck -->
+                <div class="card-deck" id="thoughts">
+                    <div class="card">
+                      <img class="card-img-top" src="./images/card-work.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <a href="/blog-post.html"><h5 class="card-title">Exploring Google Calendar Through The Combined View Of Distributed
+                            Cognition And Sociomateriality</h5></a>
+                        <p class="text-justify">This paper will examine Google Calendar, a widely used time management and schedule tracking
+                            tool, through the lens of a combination of two theories - Distributed Cognition [1] and
+                            Sociomateriality [2]. Google Calendar here is considered specifically in the organization context, the role
+                            of which is a work calendar in this case...</p>
+                        <a href="./blog-post.html" class="btn btn-outline-dark">Read More</a>
+                      </div>
+                      <div class="card-footer">
+                        <small class="secondary-text">Last update Jun 6, 2020 10:03 a.m.</small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="./images/card-work2.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <a href="#"><h5 class="card-title">how might we better design across differences with vulnerable users</h5></a>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, suscipit voluptas amet autem velit rem earum aliquam, optio labore dolores eligendi! Repellendus laboriosam in eligendi aperiam magnam doloribus iusto nihil.</p>
+                        <a href="#" class="btn btn-outline-dark">Read More</a>
+                    </div>
+                      <div class="card-footer">
+                        <small class="secondary-text">Last updated Jun 7, 2020 8:03 a.m. </small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="./images/sample-img1.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <a href="#"><h5 class="card-title">sample article</h5></a>
+                        <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam obcaecati aut nostrum? Nisi eos quae ipsum natus veritatis tempora fuga deserunt voluptatem dolorem reprehenderit id, dolorum dicta delectus provident aliquam?</p>
+                        <a href="./blog-post.html" class="btn btn-outline-dark">Read More</a>
+                    </div>
+                      <div class="card-footer">
+                        <small class="secondary-text">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>
+            
+            </div>
+
+
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <p class="col-12">Design and build by Hannah Wu. <br>
+                Website is mainly built with Bootstrap 4. <br>
+                &#169; Copyright 2020</p>
+        </footer>
+
+    </div>
+
+
+    <!-- nav-bar js -->
+    <script src="./js/nav-bar.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

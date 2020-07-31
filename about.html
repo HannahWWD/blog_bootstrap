@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <Link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div id="about-container" class="container">
+        <!-- header with website name -->
+        <header class="header">
+            <div>
+                <h1 class="col-12">Hanna</h1>
+                <h5 class="col-12">Record Life and Beauty</h5>
+                <br>
+            </div>
+
+            <!-- navigation bar -->
+            <nav class="nav-container" id="nav-container">
+                <div class="topnav" id="myTopnav">
+                    <a href="javascript:void(0);" class="icon" onclick="handleClicked()">&#9776;</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html" class="nav-active">About</a>
+                    <a href="#">Contact</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Categories
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./thoughts.html">Thoughts</a>
+                            <a href="#">Life</a>
+                            <a href="#">Skills</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+
+        <section id="main-about">
+
+            <!-- blog introduction -->
+
+            <div id="intro-container" class="intro-container">
+                <h2 class="text-center">A Blog to Record Life and Beauty</h2>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, excepturi
+                    veniam. Eligendi expedita adipisci optio molestiae aperiam velit. Possimus esse iste rem labore
+                    ducimus dolorem accusamus velit, qui consequuntur hic. Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Hic nobis perferendis vero consequatur unde optio, cum provident minima! Eos nisi
+                    quae iste dolores nobis ullam provident culpa impedit, magnam nesciunt. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Ea perferendis possimus quas eum modi, itaque quis saepe vero
+                    repellat, odit praesentium. Nostrum vel, architecto dolorum quibusdam corporis unde reiciendis
+                    voluptas.</p>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, excepturi
+                    veniam. Eligendi expedita adipisci optio molestiae aperiam velit. Possimus esse iste rem labore
+                    ducimus dolorem accusamus velit, qui consequuntur hic.</p>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, excepturi
+                    veniam. Eligendi expedita adipisci optio molestiae aperiam velit. Possimus esse iste rem labore
+                    ducimus dolorem accusamus velit, qui consequuntur hic.</p>
+            </div>
+
+            <!-- carousel  -->
+            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner img-max-height">
+                    <div class="carousel-item active img-max-height">
+                        <img class="d-block img-max-height" src="./images/pet_1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item img-max-height">
+                        <img class="d-block img-max-height" src="./images/pet_2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item img-max-height">
+                        <img class="d-block img-max-height" src="./images/pet_3.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item img-max-height">
+                        <img class="d-block img-max-height" src="./images/pet_4.jpg" alt="Fourth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <p class="col-12">Design and build by Hannah Wu. <br>
+                Website is mainly built with Bootstrap 4. <br>
+                &#169; Copyright 2020</p>
+        </footer>
+
+    </div>
+
+
+    <!-- nav-bar js -->
+    <script src="./js/nav-bar.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

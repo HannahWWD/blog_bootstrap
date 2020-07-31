@@ -5,58 +5,78 @@
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Sample Blog Post</title>
-    <Link rel="stylesheet" href="./css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- <Link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <Link rel="stylesheet" href="./styles/main.css">
+
 
 
 </head>
 
 <body>
 
+    <div id="post-container" class="container">
 
-    <!-- navigation bar -->
-    <nav class="topnav" id="myTopnav">
-        <a href="javascript:void(0);" class="icon" onclick="handleClicked()">&#9776;</a>
-        <a href="./index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <div class="dropdown">
-            <button class="dropbtn">Categories
-                <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Thoughts</a>
-                <a href="#">Life</a>
-                <a href="#">Skills</a>
-            </div>
-        </div>
-
-    </nav>
-
-
-    <div class="post-container">
         <!-- header with website name -->
-        <header class="header hbox">
-            <h1>Hanna</h1>
-            <h4>Record Design and Beauty</h4>
+        <header class="header">
+            <div>
+                <h1 class="col-12">Hanna</h1>
+                <h5 class="col-12">Record Life and Beauty</h5>
+                <br>
+            </div>
+
+            <!-- navigation bar -->
+            <nav class="nav-container" id="nav-container">
+                <div class="topnav" id="myTopnav">
+                    <a href="javascript:void(0);" class="icon" onclick="handleClicked()">&#9776;</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="#">Contact</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Categories
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="./thoughts.html">Thoughts</a>
+                            <a href="#">Life</a>
+                            <a href="#">Skills</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
         </header>
 
+
         <!-- main post session -->
-        <article class="post-content hbox">
+        <article>
             <!-- article title, author info, cover image -->
-            <section class="post-section">
-                <h5>Thoughts</h5>
+            <section>
+                <!-- <h5 class="secondary-text">Thoughts</h5> -->
+                <!-- breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">Categories</li>
+                      <li class="breadcrumb-item active" aria-current="page"><a href="thoughts.html">Thoughts</a></li>
+                    </ol>
+                </nav>
                 <h2>Exploring Google Calendar Through The Combined View Of Distributed Cognition And Sociomateriality
                 </h2>
 
-                <!-- author brief card -->
-                <div class="author-brief">
-                    <img src="./images/avatar.jpg" alt="Avatar small">
-                    <div class="card-text">
-                        <h5>Hannah Ng</h5>
-                        <p class="body-text2">published at Jun 6, 2020 10:03 a.m.</p>
-                    </div>
+               <!-- author brief card -->
+            <div class="author-brief">
+                <img src="./images/avatar.jpg" alt="Avatar small">
+                <div class="card-text">
+                    <p>Hannah Ng</p>
+                    <p class="secondary-text">published at Jun 6, 2020 10:03 a.m.</p>
+                </div>
+                <div class="follow-group">
                     <div class="social">
                         <a href="https://www.linkedin.com/">
                             <i class="fab fa-linkedin"></i>
@@ -68,77 +88,109 @@
                             <i class="fab fa-facebook-square"></i>
                         </a>
                     </div>
-                    <button class="button outline ">follow</button>
+                    <button class="btn btn-outline-secondary">follow</button>
                 </div>
+            </div>
 
-                <figure class="content-card">
+                <figure class="cover">
                     <img src="images/card-work.jpg" alt="Article associated picture. Describes people working together">
-                    <figcaption>Article Cover Photo</figcaption>
+                    <figcaption class="secondary-text">Article Cover Photo</figcaption>
                 </figure>
             </section>
 
             <!-- post content -->
-            <section class="post-section">
-                <h4>Introduction</h4>
-                <p>This paper will examine Google Calendar, a widely used time management and schedule tracking tool,through the lens of a combination of two theories - <i>Distributed Cognition</i> [1] and <i>Sociomateriality[2]</i>. <strong> Calendar here is considered specifically in the organization context, the role of which is a work calendar in this case</strong>. In a macro point of view, Google Calendar, as a work calendar, is a digital platform whose content is dynamically constituted by the ongoing social events, culture, and norms within a company. <em>However, Google Calendar cannot make responses to these social factors without human’s manual intervention</em>. Breaking down, these interventions are implemented through the process of cognition distribution, including the <u>delegation from mind to object, and cognition exchanging between people</u>, which is also the fundamental mechanism that enables the “share calendar” feature. In the following sections I will start by briefly introducing the technology and related theories. In Section 2 I will discuss why choosing the combination of Distributed Cognition and Sociomateriality could bring new understandings to this technology. In Section 3, I will unpack new understandings of Google Calendar through the combined lens in detail. In Section 4, I will discuss the design opportunities and implications for the other HCI problems revealed by this combined perspective.
+            <section class="post-content">
+                <h4>1.Introduction</h4>
+                <p class="text-justify">This paper will examine Google Calendar, a widely used time management and schedule tracking
+                    tool,through the lens of a combination of two theories - <i>Distributed Cognition</i> [1] and
+                    <i>Sociomateriality[2]</i>. <strong> Calendar here is considered specifically in the organization
+                        context, the role of which is a work calendar in this case</strong>. In a macro point of view,
+                    Google Calendar, as a work calendar, is a digital platform whose content is dynamically constituted
+                    by the ongoing social events, culture, and norms within a company. <em>However, Google Calendar
+                        cannot make responses to these social factors without human’s manual intervention</em>. Breaking
+                    down, these interventions are implemented through the process of cognition distribution, including
+                    the <u>delegation from mind to object, and cognition exchanging between people</u>, which is also
+                    the fundamental mechanism that enables the “share calendar” feature. In the following sections I
+                    will start by briefly introducing the technology and related theories. In Section 2 I will discuss
+                    why choosing the combination of Distributed Cognition and Sociomateriality could bring new
+                    understandings to this technology. In Section 3, I will unpack new understandings of Google Calendar
+                    through the combined lens in detail. In Section 4, I will discuss the design opportunities and
+                    implications for the other HCI problems revealed by this combined perspective.
                 </p>
             </section>
 
-            <section class="post-section">
+            <section class="post-content">
                 <h4>2.Theories in nutshells</h4>
                 <h5>2.1 Google calendar</h5>
-                <p>Google Calendar is a material platform that helps us “remember” important tasks, as well as organize our schedule
-                    by adding and modifying events [3]. Google Calendar could be shared with permission, which means that users
-                    could get access to others’ calendars [3]. Some of the companies leverage this shared feature in Google
-                    Calendars to keep track with their employees’ work schedules as one of the measurements of their performance.
+                <p class="text-justify">Google Calendar is a material platform that helps us “remember” important tasks, as well as organize
+                    our schedule
+                    by adding and modifying events [3]. Google Calendar could be shared with permission, which means
+                    that users
+                    could get access to others’ calendars [3]. Some of the companies leverage this shared feature in
+                    Google
+                    Calendars to keep track with their employees’ work schedules as one of the measurements of their
+                    performance.
                 </p>
                 <h5>2.2 Sociomateriality </h5>
-                <p><b>Sociomateriality is a theory built upon the intersection of technology, work, and organization [4]</b>. Wanda
-                    Orlikowski, the pioneer in sociomaterial theory, argues that social and material are not separated.</p>
+                <p class="text-justify"><b>Sociomateriality is a theory built upon the intersection of technology, work, and organization
+                        [4]</b>. Wanda
+                    Orlikowski, the pioneer in sociomaterial theory, argues that social and material are not separated.
+                </p>
                 <blockquote cite="https://en.wikipedia.org/wiki/Sociomateriality">
                     <p>“social and the material are constitutively entangled in everyday organizational life” [2].</p>
                 </blockquote>
-                <p> Here, “constitutively” means the ability to establish the form, such as using bricks to constitute a house [5].
-                    “Entangled” means that two things are so infused that it is impossible to experience them as separate entities
-                    [2][5]. Further, Sociomateriality posits that social and material are not just constantly shaping each other,
-                    but also constructing each other. All materiality is social in that it was created and used through social
-                    processes and social contexts and that all social action is possible because of some materiality [6]. One
-                    example of sociomateriality, mentioned by Orlikowski, is the Google Search. Google Search is not a static
-                    material, instead, the results it presents are dynamic and constituted by a list of social factors, including:
+                <p class="text-justify"> Here, “constitutively” means the ability to establish the form, such as using bricks to constitute a
+                    house [5].
+                    “Entangled” means that two things are so infused that it is impossible to experience them as
+                    separate entities
+                    [2][5]. Further, Sociomateriality posits that social and material are not just constantly shaping
+                    each other,
+                    but also constructing each other. All materiality is social in that it was created and used through
+                    social
+                    processes and social contexts and that all social action is possible because of some materiality
+                    [6]. One
+                    example of sociomateriality, mentioned by Orlikowski, is the Google Search. Google Search is not a
+                    static
+                    material, instead, the results it presents are dynamic and constituted by a list of social factors,
+                    including:
                 </p>
-                <ol class="ordered-list">
+                <ol>
                     <li>the authenticity of the website (official website first)</li>
                     <li>interactions by other users</li>
                     <li>the relativity to the search term</li>
                     <li>the interventions by government</li>
                 </ol>
-                <p><u>Vice versa, the social action of clicking the most related result</u>, which is most likely on top, relies on
+                <p class="text-justify"><u>Vice versa, the social action of clicking the most related result</u>, which is most likely on
+                    top, relies on
                     the order generated by the PageRank algorithm [2].</p>
-                <div class="image-diaplay-grid">
-                    <figure>
-                        <img src="./images/sample-img1.jpg" alt="sample image one">
-                        <figcaption>Fig.1 Google Search</figcaption>
+                <div class="row">
+                    <figure class="col-md-6 col-lg-4">
+                        <img class="img-fluid text-center" src="./images/sample-img1.jpg" alt="sample image one">
+                        <figcaption class="secondary-text">Fig.1 Google Search</figcaption>
                     </figure>
-                    <figure>
-                        <img src="./images/sample-img2.jpg" alt="sample image two">
-                        <figcaption>Fig.2 A Government Document</figcaption>
+                    <figure class="col-md-6 col-lg-4">
+                        <img class="img-fluid" src="./images/sample-img2.jpg" alt="sample image two">
+                        <figcaption class="secondary-text text-center">Fig.2 A Government Document</figcaption>
                     </figure>
-                    <figure>
-                        <img src="./images/sample-img3.jpg" alt="sample image three">
-                        <figcaption>Fig.3 Government Building</figcaption>
+                    <figure class="col-md-6 col-lg-4">
+                        <img class="img-fluid" src="./images/sample-img3.jpg" alt="sample image three">
+                        <figcaption class="secondary-text text-center">Fig.3 Government Building</figcaption>
                     </figure>
                 </div>
 
             </section>
 
             <!-- author detailed card-->
-            <div class="author-brief author-detailed post-section">
+            <div class="author-brief author-detailed">
                 <img src="./images/avatar.jpg" alt="Avatar small" width="120" height="120">
                 <div class="card-text detail-text">
-                    <h5>Hannah Ng</h5>
-                    <p class="body-text2">Design Technologist at Ariacom</p>
-                    <p>I am a UIUX designer as well as a frontend developer. My interests reside in both designing and building websites and web apps. I was born in Guangzhou, China, and have been living in Seattle for years. </p>
+                    <p>Hannah Ng</p>
+                    <p class="secondary-text">Design Technologist at Ariacom</p>
+                    <p>I am a UIUX designer as well as a frontend developer. My interests reside in both
+                        designing and building websites and web apps. I was born in Guangzhou, China, and have
+                        been living in Seattle for years. </p>
                 </div>
+                <div class="follow-group">
                 <div class="social">
                     <a href="https://www.linkedin.com/">
                         <i class="fab fa-linkedin"></i>
@@ -150,20 +202,34 @@
                         <i class="fab fa-facebook-square"></i>
                     </a>
                 </div>
-                <button class="button outline ">follow</button>
+                <button class="btn btn-outline-secondary">follow</button>
             </div>
 
         </article>
 
         <!-- footer -->
-        <footer class="footer hbox">
-            <p class="body-text2">Design and build by Hannah Wu.<br>&#169; Copyright 2020</p>
+        <footer>
+            <p class="col-12">Design and build by Hannah Wu. <br>
+                Website is mainly built with Bootstrap 4. <br>
+                &#169; Copyright 2020</p>
         </footer>
 
     </div>
 
     <!-- nav-bar js -->
     <script src="./js/nav-bar.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
 
 </body>
 
