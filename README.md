@@ -1,5 +1,13 @@
-# Blog Website Repository 
+# Personal Blog Website
 
-All photos are downloaded from unsplash.
-Header illustrations are from unDraw.
-Navbar reference: https://www.w3schools.com/css/css_navbar_horizontal.asp
+A personal blog website built in BootStrap framework. 
+
+_This project is in progress and not yet deployed._
+
+## Quick Start
+
+To locally access the website, download or clone the repository. Open `index.html` in your browser.
+
+## Licence
+
+This project may be redistributed under the terms specified in the [LICENSE](LICENSE) file.
